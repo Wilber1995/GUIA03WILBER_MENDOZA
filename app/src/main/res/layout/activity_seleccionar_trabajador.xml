@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SeleccionarTrabajadorActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Seleccione a su trabajador "
+        android:textColor="@color/black"
+
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp">
+        <RadioButton
+            android:id="@+id/rbTrabHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Trabajador por hora"/>
+        <RadioButton
+            android:id="@+id/rbTrabCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:text="Trabajador tiempo completo"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="end"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="150dp"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginBottom="70dp"
+            android:text="Siguiente"
+            android:textAllCaps="false"
+            android:background="@drawable/btn"/>
+    </LinearLayout>
+
+</LinearLayout>

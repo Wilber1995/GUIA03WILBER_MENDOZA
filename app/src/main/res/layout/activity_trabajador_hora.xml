@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".TrabajadorHoraActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Registro"
+        android:layout_marginTop="70dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="ID"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edtID"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="70dp"
+            android:hint="Digite el ID"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:hint="Digite el nombre"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="Apellido"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edtApellido"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:hint="Digite el apellido"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horas"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edtHora"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginStart="35dp"
+            android:hint="Digite el número de horas"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/edtValor"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:layout_marginStart="40dp"
+            android:hint="Digite el valor por hora"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAgregarTH"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/btn"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:text="Agregar"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+</LinearLayout>
